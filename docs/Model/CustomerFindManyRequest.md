@@ -1,7 +1,7 @@
 # # CustomerFindManyRequest
 
 
-## Properties
+## Properties 
 
 
 Name | Type | Description | Notes
@@ -10,8 +10,9 @@ Name | Type | Description | Notes
 **group_id**| **string** |   | [optional]
 **page_size**| **int** |   | [optional]
 **page_token**| **string** |   | [optional]
-**filter**| [**\GeminiCommerce\Customer\Model\CustomerFindManyRequestFilter**](CustomerFindManyRequestFilter.md) |   | [optional]
+**filter**| [**\OpenAPI\Client\Model\CustomerFindManyRequestFilter**](CustomerFindManyRequestFilter.md) |   | [optional]
 **filter_mask**| **string** |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
+

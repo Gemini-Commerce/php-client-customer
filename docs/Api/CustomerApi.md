@@ -1,4 +1,4 @@
-# GeminiCommerce\Customer\CustomerApi
+# OpenAPI\Client\CustomerApi
 
 All URIs are relative to https://cdp.api.gogemini.io, except if the operation defines another base path.
 
@@ -74,7 +74,7 @@ All URIs are relative to https://cdp.api.gogemini.io, except if the operation de
 ## `customerAcquireSubscriber()`
 
 ```php
-customerAcquireSubscriber($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerAcquireSubscriber($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -86,13 +86,19 @@ customerAcquireSubscriber($body): \GeminiCommerce\Customer\Model\CustomerSubscri
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateSubscriberRequest(); // \OpenAPI\Client\Model\CustomerCreateSubscriberRequest
 
 try {
     $result = $apiInstance->customerAcquireSubscriber($body);
@@ -106,15 +112,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -128,7 +134,7 @@ No authorization required
 ## `customerAcquireSubscriber2()`
 
 ```php
-customerAcquireSubscriber2($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerAcquireSubscriber2($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -140,13 +146,19 @@ customerAcquireSubscriber2($body): \GeminiCommerce\Customer\Model\CustomerSubscr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateSubscriberRequest(); // \OpenAPI\Client\Model\CustomerCreateSubscriberRequest
 
 try {
     $result = $apiInstance->customerAcquireSubscriber2($body);
@@ -160,15 +172,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -182,7 +194,7 @@ No authorization required
 ## `customerAcquireUnsubscriber()`
 
 ```php
-customerAcquireUnsubscriber($body): \GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse
+customerAcquireUnsubscriber($body): \OpenAPI\Client\Model\CustomerUnsubscribeResponse
 ```
 
 
@@ -194,13 +206,19 @@ customerAcquireUnsubscriber($body): \GeminiCommerce\Customer\Model\CustomerUnsub
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest(); // \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest
+$body = new \OpenAPI\Client\Model\CustomerUnsubscribeRequest(); // \OpenAPI\Client\Model\CustomerUnsubscribeRequest
 
 try {
     $result = $apiInstance->customerAcquireUnsubscriber($body);
@@ -214,15 +232,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
+[**\OpenAPI\Client\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -236,7 +254,7 @@ No authorization required
 ## `customerAcquireUnsubscriber2()`
 
 ```php
-customerAcquireUnsubscriber2($body): \GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse
+customerAcquireUnsubscriber2($body): \OpenAPI\Client\Model\CustomerUnsubscribeResponse
 ```
 
 
@@ -248,13 +266,19 @@ customerAcquireUnsubscriber2($body): \GeminiCommerce\Customer\Model\CustomerUnsu
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest(); // \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest
+$body = new \OpenAPI\Client\Model\CustomerUnsubscribeRequest(); // \OpenAPI\Client\Model\CustomerUnsubscribeRequest
 
 try {
     $result = $apiInstance->customerAcquireUnsubscriber2($body);
@@ -268,15 +292,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
+[**\OpenAPI\Client\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -290,7 +314,7 @@ No authorization required
 ## `customerAddCustomerToGroup()`
 
 ```php
-customerAddCustomerToGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerAddCustomerToGroup($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -302,13 +326,19 @@ customerAddCustomerToGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupR
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddCustomerToGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerAddCustomerToGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerAddCustomerToGroupRequest(); // \OpenAPI\Client\Model\CustomerAddCustomerToGroupRequest
 
 try {
     $result = $apiInstance->customerAddCustomerToGroup($body);
@@ -322,15 +352,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddCustomerToGroupRequest**](../Model/CustomerAddCustomerToGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddCustomerToGroupRequest**](../Model/CustomerAddCustomerToGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -344,7 +374,7 @@ No authorization required
 ## `customerAddCustomerToGroup2()`
 
 ```php
-customerAddCustomerToGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerAddCustomerToGroup2($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -356,13 +386,19 @@ customerAddCustomerToGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroup
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddCustomerToGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerAddCustomerToGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerAddCustomerToGroupRequest(); // \OpenAPI\Client\Model\CustomerAddCustomerToGroupRequest
 
 try {
     $result = $apiInstance->customerAddCustomerToGroup2($body);
@@ -376,15 +412,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddCustomerToGroupRequest**](../Model/CustomerAddCustomerToGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddCustomerToGroupRequest**](../Model/CustomerAddCustomerToGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -410,13 +446,19 @@ customerAssignAgent($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAssignAgentRequest(); // \GeminiCommerce\Customer\Model\CustomerAssignAgentRequest
+$body = new \OpenAPI\Client\Model\CustomerAssignAgentRequest(); // \OpenAPI\Client\Model\CustomerAssignAgentRequest
 
 try {
     $result = $apiInstance->customerAssignAgent($body);
@@ -430,7 +472,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAssignAgentRequest**](../Model/CustomerAssignAgentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAssignAgentRequest**](../Model/CustomerAssignAgentRequest.md)|  | |
 
 ### Return type
 
@@ -438,7 +480,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -452,7 +494,7 @@ No authorization required
 ## `customerBulkUpdate()`
 
 ```php
-customerBulkUpdate($body): \GeminiCommerce\Customer\Model\CustomerBulkUpdateResponse
+customerBulkUpdate($body): \OpenAPI\Client\Model\CustomerBulkUpdateResponse
 ```
 
 
@@ -464,13 +506,19 @@ customerBulkUpdate($body): \GeminiCommerce\Customer\Model\CustomerBulkUpdateResp
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerBulkUpdateRequest(); // \GeminiCommerce\Customer\Model\CustomerBulkUpdateRequest
+$body = new \OpenAPI\Client\Model\CustomerBulkUpdateRequest(); // \OpenAPI\Client\Model\CustomerBulkUpdateRequest
 
 try {
     $result = $apiInstance->customerBulkUpdate($body);
@@ -484,15 +532,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerBulkUpdateRequest**](../Model/CustomerBulkUpdateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerBulkUpdateRequest**](../Model/CustomerBulkUpdateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerBulkUpdateResponse**](../Model/CustomerBulkUpdateResponse.md)
+[**\OpenAPI\Client\Model\CustomerBulkUpdateResponse**](../Model/CustomerBulkUpdateResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -506,7 +554,7 @@ No authorization required
 ## `customerBulkUpdate2()`
 
 ```php
-customerBulkUpdate2($body): \GeminiCommerce\Customer\Model\CustomerBulkUpdateResponse
+customerBulkUpdate2($body): \OpenAPI\Client\Model\CustomerBulkUpdateResponse
 ```
 
 
@@ -518,13 +566,19 @@ customerBulkUpdate2($body): \GeminiCommerce\Customer\Model\CustomerBulkUpdateRes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerBulkUpdateRequest(); // \GeminiCommerce\Customer\Model\CustomerBulkUpdateRequest
+$body = new \OpenAPI\Client\Model\CustomerBulkUpdateRequest(); // \OpenAPI\Client\Model\CustomerBulkUpdateRequest
 
 try {
     $result = $apiInstance->customerBulkUpdate2($body);
@@ -538,15 +592,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerBulkUpdateRequest**](../Model/CustomerBulkUpdateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerBulkUpdateRequest**](../Model/CustomerBulkUpdateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerBulkUpdateResponse**](../Model/CustomerBulkUpdateResponse.md)
+[**\OpenAPI\Client\Model\CustomerBulkUpdateResponse**](../Model/CustomerBulkUpdateResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -560,7 +614,7 @@ No authorization required
 ## `customerCreate()`
 
 ```php
-customerCreate($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerCreate($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -572,13 +626,19 @@ customerCreate($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateRequest(); // \OpenAPI\Client\Model\CustomerCreateRequest
 
 try {
     $result = $apiInstance->customerCreate($body);
@@ -592,15 +652,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateRequest**](../Model/CustomerCreateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateRequest**](../Model/CustomerCreateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -614,7 +674,7 @@ No authorization required
 ## `customerCreate2()`
 
 ```php
-customerCreate2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerCreate2($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -626,13 +686,19 @@ customerCreate2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateRequest(); // \OpenAPI\Client\Model\CustomerCreateRequest
 
 try {
     $result = $apiInstance->customerCreate2($body);
@@ -646,15 +712,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateRequest**](../Model/CustomerCreateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateRequest**](../Model/CustomerCreateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -668,7 +734,7 @@ No authorization required
 ## `customerCreateAddress()`
 
 ```php
-customerCreateAddress($body): \GeminiCommerce\Customer\Model\CustomerAddressCustomerResponse
+customerCreateAddress($body): \OpenAPI\Client\Model\CustomerAddressCustomerResponse
 ```
 
 
@@ -680,13 +746,19 @@ customerCreateAddress($body): \GeminiCommerce\Customer\Model\CustomerAddressCust
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddressCreateRequest(); // \GeminiCommerce\Customer\Model\CustomerAddressCreateRequest
+$body = new \OpenAPI\Client\Model\CustomerAddressCreateRequest(); // \OpenAPI\Client\Model\CustomerAddressCreateRequest
 
 try {
     $result = $apiInstance->customerCreateAddress($body);
@@ -700,15 +772,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddressCreateRequest**](../Model/CustomerAddressCreateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddressCreateRequest**](../Model/CustomerAddressCreateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerAddressCustomerResponse**](../Model/CustomerAddressCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerAddressCustomerResponse**](../Model/CustomerAddressCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -722,7 +794,7 @@ No authorization required
 ## `customerCreateAddress2()`
 
 ```php
-customerCreateAddress2($body): \GeminiCommerce\Customer\Model\CustomerAddressCustomerResponse
+customerCreateAddress2($body): \OpenAPI\Client\Model\CustomerAddressCustomerResponse
 ```
 
 
@@ -734,13 +806,19 @@ customerCreateAddress2($body): \GeminiCommerce\Customer\Model\CustomerAddressCus
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddressCreateRequest(); // \GeminiCommerce\Customer\Model\CustomerAddressCreateRequest
+$body = new \OpenAPI\Client\Model\CustomerAddressCreateRequest(); // \OpenAPI\Client\Model\CustomerAddressCreateRequest
 
 try {
     $result = $apiInstance->customerCreateAddress2($body);
@@ -754,15 +832,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddressCreateRequest**](../Model/CustomerAddressCreateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddressCreateRequest**](../Model/CustomerAddressCreateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerAddressCustomerResponse**](../Model/CustomerAddressCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerAddressCustomerResponse**](../Model/CustomerAddressCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -776,7 +854,7 @@ No authorization required
 ## `customerCreateGroup()`
 
 ```php
-customerCreateGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerCreateGroup($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -788,13 +866,19 @@ customerCreateGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateGroupRequest(); // \OpenAPI\Client\Model\CustomerCreateGroupRequest
 
 try {
     $result = $apiInstance->customerCreateGroup($body);
@@ -808,15 +892,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateGroupRequest**](../Model/CustomerCreateGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateGroupRequest**](../Model/CustomerCreateGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -830,7 +914,7 @@ No authorization required
 ## `customerCreateGroup2()`
 
 ```php
-customerCreateGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerCreateGroup2($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -842,13 +926,19 @@ customerCreateGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroupRespons
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateGroupRequest(); // \OpenAPI\Client\Model\CustomerCreateGroupRequest
 
 try {
     $result = $apiInstance->customerCreateGroup2($body);
@@ -862,15 +952,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateGroupRequest**](../Model/CustomerCreateGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateGroupRequest**](../Model/CustomerCreateGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -884,7 +974,7 @@ No authorization required
 ## `customerCreateSubscriber()`
 
 ```php
-customerCreateSubscriber($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerCreateSubscriber($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -896,13 +986,19 @@ customerCreateSubscriber($body): \GeminiCommerce\Customer\Model\CustomerSubscrib
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateSubscriberRequest(); // \OpenAPI\Client\Model\CustomerCreateSubscriberRequest
 
 try {
     $result = $apiInstance->customerCreateSubscriber($body);
@@ -916,15 +1012,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -938,7 +1034,7 @@ No authorization required
 ## `customerCreateSubscriber2()`
 
 ```php
-customerCreateSubscriber2($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerCreateSubscriber2($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -950,13 +1046,19 @@ customerCreateSubscriber2($body): \GeminiCommerce\Customer\Model\CustomerSubscri
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest(); // \GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest
+$body = new \OpenAPI\Client\Model\CustomerCreateSubscriberRequest(); // \OpenAPI\Client\Model\CustomerCreateSubscriberRequest
 
 try {
     $result = $apiInstance->customerCreateSubscriber2($body);
@@ -970,15 +1072,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerCreateSubscriberRequest**](../Model/CustomerCreateSubscriberRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -992,7 +1094,7 @@ No authorization required
 ## `customerDeleteAddress()`
 
 ```php
-customerDeleteAddress($body): \GeminiCommerce\Customer\Model\CustomerAddressDeleteResponse
+customerDeleteAddress($body): \OpenAPI\Client\Model\CustomerAddressDeleteResponse
 ```
 
 
@@ -1004,13 +1106,19 @@ customerDeleteAddress($body): \GeminiCommerce\Customer\Model\CustomerAddressDele
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddressDeleteRequest(); // \GeminiCommerce\Customer\Model\CustomerAddressDeleteRequest
+$body = new \OpenAPI\Client\Model\CustomerAddressDeleteRequest(); // \OpenAPI\Client\Model\CustomerAddressDeleteRequest
 
 try {
     $result = $apiInstance->customerDeleteAddress($body);
@@ -1024,15 +1132,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddressDeleteRequest**](../Model/CustomerAddressDeleteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddressDeleteRequest**](../Model/CustomerAddressDeleteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerAddressDeleteResponse**](../Model/CustomerAddressDeleteResponse.md)
+[**\OpenAPI\Client\Model\CustomerAddressDeleteResponse**](../Model/CustomerAddressDeleteResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1046,7 +1154,7 @@ No authorization required
 ## `customerDeleteAddress2()`
 
 ```php
-customerDeleteAddress2($body): \GeminiCommerce\Customer\Model\CustomerAddressDeleteResponse
+customerDeleteAddress2($body): \OpenAPI\Client\Model\CustomerAddressDeleteResponse
 ```
 
 
@@ -1058,13 +1166,19 @@ customerDeleteAddress2($body): \GeminiCommerce\Customer\Model\CustomerAddressDel
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddressDeleteRequest(); // \GeminiCommerce\Customer\Model\CustomerAddressDeleteRequest
+$body = new \OpenAPI\Client\Model\CustomerAddressDeleteRequest(); // \OpenAPI\Client\Model\CustomerAddressDeleteRequest
 
 try {
     $result = $apiInstance->customerDeleteAddress2($body);
@@ -1078,15 +1192,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddressDeleteRequest**](../Model/CustomerAddressDeleteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddressDeleteRequest**](../Model/CustomerAddressDeleteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerAddressDeleteResponse**](../Model/CustomerAddressDeleteResponse.md)
+[**\OpenAPI\Client\Model\CustomerAddressDeleteResponse**](../Model/CustomerAddressDeleteResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1100,7 +1214,7 @@ No authorization required
 ## `customerDeleteGroup()`
 
 ```php
-customerDeleteGroup($body): \GeminiCommerce\Customer\Model\CustomerDeleteGroupResponse
+customerDeleteGroup($body): \OpenAPI\Client\Model\CustomerDeleteGroupResponse
 ```
 
 
@@ -1112,13 +1226,19 @@ customerDeleteGroup($body): \GeminiCommerce\Customer\Model\CustomerDeleteGroupRe
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerDeleteGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerDeleteGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerDeleteGroupRequest(); // \OpenAPI\Client\Model\CustomerDeleteGroupRequest
 
 try {
     $result = $apiInstance->customerDeleteGroup($body);
@@ -1132,15 +1252,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerDeleteGroupRequest**](../Model/CustomerDeleteGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerDeleteGroupRequest**](../Model/CustomerDeleteGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerDeleteGroupResponse**](../Model/CustomerDeleteGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerDeleteGroupResponse**](../Model/CustomerDeleteGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1154,7 +1274,7 @@ No authorization required
 ## `customerDeleteGroup2()`
 
 ```php
-customerDeleteGroup2($body): \GeminiCommerce\Customer\Model\CustomerDeleteGroupResponse
+customerDeleteGroup2($body): \OpenAPI\Client\Model\CustomerDeleteGroupResponse
 ```
 
 
@@ -1166,13 +1286,19 @@ customerDeleteGroup2($body): \GeminiCommerce\Customer\Model\CustomerDeleteGroupR
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerDeleteGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerDeleteGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerDeleteGroupRequest(); // \OpenAPI\Client\Model\CustomerDeleteGroupRequest
 
 try {
     $result = $apiInstance->customerDeleteGroup2($body);
@@ -1186,15 +1312,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerDeleteGroupRequest**](../Model/CustomerDeleteGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerDeleteGroupRequest**](../Model/CustomerDeleteGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerDeleteGroupResponse**](../Model/CustomerDeleteGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerDeleteGroupResponse**](../Model/CustomerDeleteGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1208,7 +1334,7 @@ No authorization required
 ## `customerFind()`
 
 ```php
-customerFind($body): \GeminiCommerce\Customer\Model\CustomerFindManyResponse
+customerFind($body): \OpenAPI\Client\Model\CustomerFindManyResponse
 ```
 
 
@@ -1220,13 +1346,19 @@ customerFind($body): \GeminiCommerce\Customer\Model\CustomerFindManyResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindManyRequest(); // \GeminiCommerce\Customer\Model\CustomerFindManyRequest
+$body = new \OpenAPI\Client\Model\CustomerFindManyRequest(); // \OpenAPI\Client\Model\CustomerFindManyRequest
 
 try {
     $result = $apiInstance->customerFind($body);
@@ -1240,15 +1372,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindManyRequest**](../Model/CustomerFindManyRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindManyRequest**](../Model/CustomerFindManyRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerFindManyResponse**](../Model/CustomerFindManyResponse.md)
+[**\OpenAPI\Client\Model\CustomerFindManyResponse**](../Model/CustomerFindManyResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1262,7 +1394,7 @@ No authorization required
 ## `customerFind2()`
 
 ```php
-customerFind2($body): \GeminiCommerce\Customer\Model\CustomerFindManyResponse
+customerFind2($body): \OpenAPI\Client\Model\CustomerFindManyResponse
 ```
 
 
@@ -1274,13 +1406,19 @@ customerFind2($body): \GeminiCommerce\Customer\Model\CustomerFindManyResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindManyRequest(); // \GeminiCommerce\Customer\Model\CustomerFindManyRequest
+$body = new \OpenAPI\Client\Model\CustomerFindManyRequest(); // \OpenAPI\Client\Model\CustomerFindManyRequest
 
 try {
     $result = $apiInstance->customerFind2($body);
@@ -1294,15 +1432,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindManyRequest**](../Model/CustomerFindManyRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindManyRequest**](../Model/CustomerFindManyRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerFindManyResponse**](../Model/CustomerFindManyResponse.md)
+[**\OpenAPI\Client\Model\CustomerFindManyResponse**](../Model/CustomerFindManyResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1316,7 +1454,7 @@ No authorization required
 ## `customerFindByEmail()`
 
 ```php
-customerFindByEmail($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerFindByEmail($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -1328,13 +1466,19 @@ customerFindByEmail($body): \GeminiCommerce\Customer\Model\CustomerCustomerRespo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindByEmailRequest(); // \GeminiCommerce\Customer\Model\CustomerFindByEmailRequest
+$body = new \OpenAPI\Client\Model\CustomerFindByEmailRequest(); // \OpenAPI\Client\Model\CustomerFindByEmailRequest
 
 try {
     $result = $apiInstance->customerFindByEmail($body);
@@ -1348,15 +1492,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindByEmailRequest**](../Model/CustomerFindByEmailRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindByEmailRequest**](../Model/CustomerFindByEmailRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1370,7 +1514,7 @@ No authorization required
 ## `customerFindByEmail2()`
 
 ```php
-customerFindByEmail2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerFindByEmail2($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -1382,13 +1526,19 @@ customerFindByEmail2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResp
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindByEmailRequest(); // \GeminiCommerce\Customer\Model\CustomerFindByEmailRequest
+$body = new \OpenAPI\Client\Model\CustomerFindByEmailRequest(); // \OpenAPI\Client\Model\CustomerFindByEmailRequest
 
 try {
     $result = $apiInstance->customerFindByEmail2($body);
@@ -1402,15 +1552,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindByEmailRequest**](../Model/CustomerFindByEmailRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindByEmailRequest**](../Model/CustomerFindByEmailRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1424,7 +1574,7 @@ No authorization required
 ## `customerFindById()`
 
 ```php
-customerFindById($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerFindById($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -1436,13 +1586,19 @@ customerFindById($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindByIdRequest(); // \GeminiCommerce\Customer\Model\CustomerFindByIdRequest
+$body = new \OpenAPI\Client\Model\CustomerFindByIdRequest(); // \OpenAPI\Client\Model\CustomerFindByIdRequest
 
 try {
     $result = $apiInstance->customerFindById($body);
@@ -1456,15 +1612,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindByIdRequest**](../Model/CustomerFindByIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindByIdRequest**](../Model/CustomerFindByIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1478,7 +1634,7 @@ No authorization required
 ## `customerFindById2()`
 
 ```php
-customerFindById2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerFindById2($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -1490,13 +1646,19 @@ customerFindById2($body): \GeminiCommerce\Customer\Model\CustomerCustomerRespons
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindByIdRequest(); // \GeminiCommerce\Customer\Model\CustomerFindByIdRequest
+$body = new \OpenAPI\Client\Model\CustomerFindByIdRequest(); // \OpenAPI\Client\Model\CustomerFindByIdRequest
 
 try {
     $result = $apiInstance->customerFindById2($body);
@@ -1510,15 +1672,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindByIdRequest**](../Model/CustomerFindByIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindByIdRequest**](../Model/CustomerFindByIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1532,7 +1694,7 @@ No authorization required
 ## `customerFindSubscriberByEmail()`
 
 ```php
-customerFindSubscriberByEmail($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerFindSubscriberByEmail($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -1544,13 +1706,19 @@ customerFindSubscriberByEmail($body): \GeminiCommerce\Customer\Model\CustomerSub
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindSubscriberByEmailRequest(); // \GeminiCommerce\Customer\Model\CustomerFindSubscriberByEmailRequest
+$body = new \OpenAPI\Client\Model\CustomerFindSubscriberByEmailRequest(); // \OpenAPI\Client\Model\CustomerFindSubscriberByEmailRequest
 
 try {
     $result = $apiInstance->customerFindSubscriberByEmail($body);
@@ -1564,15 +1732,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindSubscriberByEmailRequest**](../Model/CustomerFindSubscriberByEmailRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindSubscriberByEmailRequest**](../Model/CustomerFindSubscriberByEmailRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1586,7 +1754,7 @@ No authorization required
 ## `customerFindSubscriberByEmail2()`
 
 ```php
-customerFindSubscriberByEmail2($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerFindSubscriberByEmail2($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -1598,13 +1766,19 @@ customerFindSubscriberByEmail2($body): \GeminiCommerce\Customer\Model\CustomerSu
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindSubscriberByEmailRequest(); // \GeminiCommerce\Customer\Model\CustomerFindSubscriberByEmailRequest
+$body = new \OpenAPI\Client\Model\CustomerFindSubscriberByEmailRequest(); // \OpenAPI\Client\Model\CustomerFindSubscriberByEmailRequest
 
 try {
     $result = $apiInstance->customerFindSubscriberByEmail2($body);
@@ -1618,15 +1792,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindSubscriberByEmailRequest**](../Model/CustomerFindSubscriberByEmailRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindSubscriberByEmailRequest**](../Model/CustomerFindSubscriberByEmailRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1640,7 +1814,7 @@ No authorization required
 ## `customerFindSubscriberById()`
 
 ```php
-customerFindSubscriberById($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerFindSubscriberById($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -1652,13 +1826,19 @@ customerFindSubscriberById($body): \GeminiCommerce\Customer\Model\CustomerSubscr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindSubscriberByIdRequest(); // \GeminiCommerce\Customer\Model\CustomerFindSubscriberByIdRequest
+$body = new \OpenAPI\Client\Model\CustomerFindSubscriberByIdRequest(); // \OpenAPI\Client\Model\CustomerFindSubscriberByIdRequest
 
 try {
     $result = $apiInstance->customerFindSubscriberById($body);
@@ -1672,15 +1852,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindSubscriberByIdRequest**](../Model/CustomerFindSubscriberByIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindSubscriberByIdRequest**](../Model/CustomerFindSubscriberByIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1694,7 +1874,7 @@ No authorization required
 ## `customerFindSubscriberById2()`
 
 ```php
-customerFindSubscriberById2($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerFindSubscriberById2($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -1706,13 +1886,19 @@ customerFindSubscriberById2($body): \GeminiCommerce\Customer\Model\CustomerSubsc
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerFindSubscriberByIdRequest(); // \GeminiCommerce\Customer\Model\CustomerFindSubscriberByIdRequest
+$body = new \OpenAPI\Client\Model\CustomerFindSubscriberByIdRequest(); // \OpenAPI\Client\Model\CustomerFindSubscriberByIdRequest
 
 try {
     $result = $apiInstance->customerFindSubscriberById2($body);
@@ -1726,15 +1912,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerFindSubscriberByIdRequest**](../Model/CustomerFindSubscriberByIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerFindSubscriberByIdRequest**](../Model/CustomerFindSubscriberByIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1748,7 +1934,7 @@ No authorization required
 ## `customerGetGroupByCode()`
 
 ```php
-customerGetGroupByCode($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerGetGroupByCode($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -1760,13 +1946,19 @@ customerGetGroupByCode($body): \GeminiCommerce\Customer\Model\CustomerGroupRespo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerGetGroupByCodeRequest(); // \GeminiCommerce\Customer\Model\CustomerGetGroupByCodeRequest
+$body = new \OpenAPI\Client\Model\CustomerGetGroupByCodeRequest(); // \OpenAPI\Client\Model\CustomerGetGroupByCodeRequest
 
 try {
     $result = $apiInstance->customerGetGroupByCode($body);
@@ -1780,15 +1972,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerGetGroupByCodeRequest**](../Model/CustomerGetGroupByCodeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerGetGroupByCodeRequest**](../Model/CustomerGetGroupByCodeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1802,7 +1994,7 @@ No authorization required
 ## `customerGetGroupByCode2()`
 
 ```php
-customerGetGroupByCode2($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerGetGroupByCode2($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -1814,13 +2006,19 @@ customerGetGroupByCode2($body): \GeminiCommerce\Customer\Model\CustomerGroupResp
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerGetGroupByCodeRequest(); // \GeminiCommerce\Customer\Model\CustomerGetGroupByCodeRequest
+$body = new \OpenAPI\Client\Model\CustomerGetGroupByCodeRequest(); // \OpenAPI\Client\Model\CustomerGetGroupByCodeRequest
 
 try {
     $result = $apiInstance->customerGetGroupByCode2($body);
@@ -1834,15 +2032,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerGetGroupByCodeRequest**](../Model/CustomerGetGroupByCodeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerGetGroupByCodeRequest**](../Model/CustomerGetGroupByCodeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1856,7 +2054,7 @@ No authorization required
 ## `customerGetGroupById()`
 
 ```php
-customerGetGroupById($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerGetGroupById($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -1868,13 +2066,19 @@ customerGetGroupById($body): \GeminiCommerce\Customer\Model\CustomerGroupRespons
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerGetGroupByIdRequest(); // \GeminiCommerce\Customer\Model\CustomerGetGroupByIdRequest
+$body = new \OpenAPI\Client\Model\CustomerGetGroupByIdRequest(); // \OpenAPI\Client\Model\CustomerGetGroupByIdRequest
 
 try {
     $result = $apiInstance->customerGetGroupById($body);
@@ -1888,15 +2092,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerGetGroupByIdRequest**](../Model/CustomerGetGroupByIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerGetGroupByIdRequest**](../Model/CustomerGetGroupByIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1910,7 +2114,7 @@ No authorization required
 ## `customerGetGroupById2()`
 
 ```php
-customerGetGroupById2($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerGetGroupById2($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -1922,13 +2126,19 @@ customerGetGroupById2($body): \GeminiCommerce\Customer\Model\CustomerGroupRespon
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerGetGroupByIdRequest(); // \GeminiCommerce\Customer\Model\CustomerGetGroupByIdRequest
+$body = new \OpenAPI\Client\Model\CustomerGetGroupByIdRequest(); // \OpenAPI\Client\Model\CustomerGetGroupByIdRequest
 
 try {
     $result = $apiInstance->customerGetGroupById2($body);
@@ -1942,15 +2152,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerGetGroupByIdRequest**](../Model/CustomerGetGroupByIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerGetGroupByIdRequest**](../Model/CustomerGetGroupByIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1976,13 +2186,19 @@ customerGrantPermissions($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerGrantPermissionsRequest(); // \GeminiCommerce\Customer\Model\CustomerGrantPermissionsRequest
+$body = new \OpenAPI\Client\Model\CustomerGrantPermissionsRequest(); // \OpenAPI\Client\Model\CustomerGrantPermissionsRequest
 
 try {
     $result = $apiInstance->customerGrantPermissions($body);
@@ -1996,7 +2212,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerGrantPermissionsRequest**](../Model/CustomerGrantPermissionsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerGrantPermissionsRequest**](../Model/CustomerGrantPermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -2004,7 +2220,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2030,13 +2246,19 @@ customerGrantPermissions2($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerGrantPermissionsRequest(); // \GeminiCommerce\Customer\Model\CustomerGrantPermissionsRequest
+$body = new \OpenAPI\Client\Model\CustomerGrantPermissionsRequest(); // \OpenAPI\Client\Model\CustomerGrantPermissionsRequest
 
 try {
     $result = $apiInstance->customerGrantPermissions2($body);
@@ -2050,7 +2272,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerGrantPermissionsRequest**](../Model/CustomerGrantPermissionsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerGrantPermissionsRequest**](../Model/CustomerGrantPermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -2058,7 +2280,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2072,7 +2294,7 @@ No authorization required
 ## `customerListConsents()`
 
 ```php
-customerListConsents($body): \GeminiCommerce\Customer\Model\CustomerListConsentsResponse
+customerListConsents($body): \OpenAPI\Client\Model\CustomerListConsentsResponse
 ```
 
 ListConsents list all consents of a customer
@@ -2084,13 +2306,19 @@ ListConsents list all consents of a customer
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerListConsentsRequest(); // \GeminiCommerce\Customer\Model\CustomerListConsentsRequest
+$body = new \OpenAPI\Client\Model\CustomerListConsentsRequest(); // \OpenAPI\Client\Model\CustomerListConsentsRequest
 
 try {
     $result = $apiInstance->customerListConsents($body);
@@ -2104,15 +2332,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerListConsentsRequest**](../Model/CustomerListConsentsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerListConsentsRequest**](../Model/CustomerListConsentsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerListConsentsResponse**](../Model/CustomerListConsentsResponse.md)
+[**\OpenAPI\Client\Model\CustomerListConsentsResponse**](../Model/CustomerListConsentsResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2126,7 +2354,7 @@ No authorization required
 ## `customerListCustomers()`
 
 ```php
-customerListCustomers($body): \GeminiCommerce\Customer\Model\CustomerListCustomersResponse
+customerListCustomers($body): \OpenAPI\Client\Model\CustomerListCustomersResponse
 ```
 
 
@@ -2138,13 +2366,19 @@ customerListCustomers($body): \GeminiCommerce\Customer\Model\CustomerListCustome
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerListCustomersRequest(); // \GeminiCommerce\Customer\Model\CustomerListCustomersRequest
+$body = new \OpenAPI\Client\Model\CustomerListCustomersRequest(); // \OpenAPI\Client\Model\CustomerListCustomersRequest
 
 try {
     $result = $apiInstance->customerListCustomers($body);
@@ -2158,15 +2392,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerListCustomersRequest**](../Model/CustomerListCustomersRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerListCustomersRequest**](../Model/CustomerListCustomersRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerListCustomersResponse**](../Model/CustomerListCustomersResponse.md)
+[**\OpenAPI\Client\Model\CustomerListCustomersResponse**](../Model/CustomerListCustomersResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2180,7 +2414,7 @@ No authorization required
 ## `customerListCustomers2()`
 
 ```php
-customerListCustomers2($body): \GeminiCommerce\Customer\Model\CustomerListCustomersResponse
+customerListCustomers2($body): \OpenAPI\Client\Model\CustomerListCustomersResponse
 ```
 
 
@@ -2192,13 +2426,19 @@ customerListCustomers2($body): \GeminiCommerce\Customer\Model\CustomerListCustom
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerListCustomersRequest(); // \GeminiCommerce\Customer\Model\CustomerListCustomersRequest
+$body = new \OpenAPI\Client\Model\CustomerListCustomersRequest(); // \OpenAPI\Client\Model\CustomerListCustomersRequest
 
 try {
     $result = $apiInstance->customerListCustomers2($body);
@@ -2212,15 +2452,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerListCustomersRequest**](../Model/CustomerListCustomersRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerListCustomersRequest**](../Model/CustomerListCustomersRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerListCustomersResponse**](../Model/CustomerListCustomersResponse.md)
+[**\OpenAPI\Client\Model\CustomerListCustomersResponse**](../Model/CustomerListCustomersResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2234,7 +2474,7 @@ No authorization required
 ## `customerListGroups()`
 
 ```php
-customerListGroups($body): \GeminiCommerce\Customer\Model\CustomerListGroupsResponse
+customerListGroups($body): \OpenAPI\Client\Model\CustomerListGroupsResponse
 ```
 
 
@@ -2246,13 +2486,19 @@ customerListGroups($body): \GeminiCommerce\Customer\Model\CustomerListGroupsResp
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerListGroupsRequest(); // \GeminiCommerce\Customer\Model\CustomerListGroupsRequest
+$body = new \OpenAPI\Client\Model\CustomerListGroupsRequest(); // \OpenAPI\Client\Model\CustomerListGroupsRequest
 
 try {
     $result = $apiInstance->customerListGroups($body);
@@ -2266,15 +2512,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerListGroupsRequest**](../Model/CustomerListGroupsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerListGroupsRequest**](../Model/CustomerListGroupsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerListGroupsResponse**](../Model/CustomerListGroupsResponse.md)
+[**\OpenAPI\Client\Model\CustomerListGroupsResponse**](../Model/CustomerListGroupsResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2288,7 +2534,7 @@ No authorization required
 ## `customerListGroups2()`
 
 ```php
-customerListGroups2($body): \GeminiCommerce\Customer\Model\CustomerListGroupsResponse
+customerListGroups2($body): \OpenAPI\Client\Model\CustomerListGroupsResponse
 ```
 
 
@@ -2300,13 +2546,19 @@ customerListGroups2($body): \GeminiCommerce\Customer\Model\CustomerListGroupsRes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerListGroupsRequest(); // \GeminiCommerce\Customer\Model\CustomerListGroupsRequest
+$body = new \OpenAPI\Client\Model\CustomerListGroupsRequest(); // \OpenAPI\Client\Model\CustomerListGroupsRequest
 
 try {
     $result = $apiInstance->customerListGroups2($body);
@@ -2320,15 +2572,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerListGroupsRequest**](../Model/CustomerListGroupsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerListGroupsRequest**](../Model/CustomerListGroupsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerListGroupsResponse**](../Model/CustomerListGroupsResponse.md)
+[**\OpenAPI\Client\Model\CustomerListGroupsResponse**](../Model/CustomerListGroupsResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2342,7 +2594,7 @@ No authorization required
 ## `customerRemoveCustomerFromGroup()`
 
 ```php
-customerRemoveCustomerFromGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerRemoveCustomerFromGroup($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -2354,13 +2606,19 @@ customerRemoveCustomerFromGroup($body): \GeminiCommerce\Customer\Model\CustomerG
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerRemoveCustomerFromGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerRemoveCustomerFromGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerRemoveCustomerFromGroupRequest(); // \OpenAPI\Client\Model\CustomerRemoveCustomerFromGroupRequest
 
 try {
     $result = $apiInstance->customerRemoveCustomerFromGroup($body);
@@ -2374,15 +2632,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerRemoveCustomerFromGroupRequest**](../Model/CustomerRemoveCustomerFromGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerRemoveCustomerFromGroupRequest**](../Model/CustomerRemoveCustomerFromGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2396,7 +2654,7 @@ No authorization required
 ## `customerRemoveCustomerFromGroup2()`
 
 ```php
-customerRemoveCustomerFromGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerRemoveCustomerFromGroup2($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -2408,13 +2666,19 @@ customerRemoveCustomerFromGroup2($body): \GeminiCommerce\Customer\Model\Customer
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerRemoveCustomerFromGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerRemoveCustomerFromGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerRemoveCustomerFromGroupRequest(); // \OpenAPI\Client\Model\CustomerRemoveCustomerFromGroupRequest
 
 try {
     $result = $apiInstance->customerRemoveCustomerFromGroup2($body);
@@ -2428,15 +2692,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerRemoveCustomerFromGroupRequest**](../Model/CustomerRemoveCustomerFromGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerRemoveCustomerFromGroupRequest**](../Model/CustomerRemoveCustomerFromGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2450,7 +2714,7 @@ No authorization required
 ## `customerRemoveDefaultAddress()`
 
 ```php
-customerRemoveDefaultAddress($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerRemoveDefaultAddress($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -2462,13 +2726,19 @@ customerRemoveDefaultAddress($body): \GeminiCommerce\Customer\Model\CustomerCust
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerRemoveDefaultAddressRequest(); // \GeminiCommerce\Customer\Model\CustomerRemoveDefaultAddressRequest
+$body = new \OpenAPI\Client\Model\CustomerRemoveDefaultAddressRequest(); // \OpenAPI\Client\Model\CustomerRemoveDefaultAddressRequest
 
 try {
     $result = $apiInstance->customerRemoveDefaultAddress($body);
@@ -2482,15 +2752,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerRemoveDefaultAddressRequest**](../Model/CustomerRemoveDefaultAddressRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerRemoveDefaultAddressRequest**](../Model/CustomerRemoveDefaultAddressRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2504,7 +2774,7 @@ No authorization required
 ## `customerRemoveDefaultAddress2()`
 
 ```php
-customerRemoveDefaultAddress2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerRemoveDefaultAddress2($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -2516,13 +2786,19 @@ customerRemoveDefaultAddress2($body): \GeminiCommerce\Customer\Model\CustomerCus
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerRemoveDefaultAddressRequest(); // \GeminiCommerce\Customer\Model\CustomerRemoveDefaultAddressRequest
+$body = new \OpenAPI\Client\Model\CustomerRemoveDefaultAddressRequest(); // \OpenAPI\Client\Model\CustomerRemoveDefaultAddressRequest
 
 try {
     $result = $apiInstance->customerRemoveDefaultAddress2($body);
@@ -2536,15 +2812,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerRemoveDefaultAddressRequest**](../Model/CustomerRemoveDefaultAddressRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerRemoveDefaultAddressRequest**](../Model/CustomerRemoveDefaultAddressRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2570,13 +2846,19 @@ customerRevokePermissions($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerRevokePermissionsRequest(); // \GeminiCommerce\Customer\Model\CustomerRevokePermissionsRequest
+$body = new \OpenAPI\Client\Model\CustomerRevokePermissionsRequest(); // \OpenAPI\Client\Model\CustomerRevokePermissionsRequest
 
 try {
     $result = $apiInstance->customerRevokePermissions($body);
@@ -2590,7 +2872,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerRevokePermissionsRequest**](../Model/CustomerRevokePermissionsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerRevokePermissionsRequest**](../Model/CustomerRevokePermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -2598,7 +2880,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2624,13 +2906,19 @@ customerRevokePermissions2($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerRevokePermissionsRequest(); // \GeminiCommerce\Customer\Model\CustomerRevokePermissionsRequest
+$body = new \OpenAPI\Client\Model\CustomerRevokePermissionsRequest(); // \OpenAPI\Client\Model\CustomerRevokePermissionsRequest
 
 try {
     $result = $apiInstance->customerRevokePermissions2($body);
@@ -2644,7 +2932,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerRevokePermissionsRequest**](../Model/CustomerRevokePermissionsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerRevokePermissionsRequest**](../Model/CustomerRevokePermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -2652,7 +2940,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2666,7 +2954,7 @@ No authorization required
 ## `customerSearch()`
 
 ```php
-customerSearch($body): \GeminiCommerce\Customer\Model\CustomerSearchResponse
+customerSearch($body): \OpenAPI\Client\Model\CustomerSearchResponse
 ```
 
 
@@ -2678,13 +2966,19 @@ customerSearch($body): \GeminiCommerce\Customer\Model\CustomerSearchResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerSearchRequest(); // \GeminiCommerce\Customer\Model\CustomerSearchRequest
+$body = new \OpenAPI\Client\Model\CustomerSearchRequest(); // \OpenAPI\Client\Model\CustomerSearchRequest
 
 try {
     $result = $apiInstance->customerSearch($body);
@@ -2698,15 +2992,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerSearchRequest**](../Model/CustomerSearchRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerSearchRequest**](../Model/CustomerSearchRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSearchResponse**](../Model/CustomerSearchResponse.md)
+[**\OpenAPI\Client\Model\CustomerSearchResponse**](../Model/CustomerSearchResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2720,7 +3014,7 @@ No authorization required
 ## `customerSearch2()`
 
 ```php
-customerSearch2($body): \GeminiCommerce\Customer\Model\CustomerSearchResponse
+customerSearch2($body): \OpenAPI\Client\Model\CustomerSearchResponse
 ```
 
 
@@ -2732,13 +3026,19 @@ customerSearch2($body): \GeminiCommerce\Customer\Model\CustomerSearchResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerSearchRequest(); // \GeminiCommerce\Customer\Model\CustomerSearchRequest
+$body = new \OpenAPI\Client\Model\CustomerSearchRequest(); // \OpenAPI\Client\Model\CustomerSearchRequest
 
 try {
     $result = $apiInstance->customerSearch2($body);
@@ -2752,15 +3052,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerSearchRequest**](../Model/CustomerSearchRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerSearchRequest**](../Model/CustomerSearchRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSearchResponse**](../Model/CustomerSearchResponse.md)
+[**\OpenAPI\Client\Model\CustomerSearchResponse**](../Model/CustomerSearchResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2774,7 +3074,7 @@ No authorization required
 ## `customerSetDefaultAddress()`
 
 ```php
-customerSetDefaultAddress($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerSetDefaultAddress($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -2786,13 +3086,19 @@ customerSetDefaultAddress($body): \GeminiCommerce\Customer\Model\CustomerCustome
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerSetDefaultAddressRequest(); // \GeminiCommerce\Customer\Model\CustomerSetDefaultAddressRequest
+$body = new \OpenAPI\Client\Model\CustomerSetDefaultAddressRequest(); // \OpenAPI\Client\Model\CustomerSetDefaultAddressRequest
 
 try {
     $result = $apiInstance->customerSetDefaultAddress($body);
@@ -2806,15 +3112,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerSetDefaultAddressRequest**](../Model/CustomerSetDefaultAddressRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerSetDefaultAddressRequest**](../Model/CustomerSetDefaultAddressRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2828,7 +3134,7 @@ No authorization required
 ## `customerSetDefaultAddress2()`
 
 ```php
-customerSetDefaultAddress2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerSetDefaultAddress2($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -2840,13 +3146,19 @@ customerSetDefaultAddress2($body): \GeminiCommerce\Customer\Model\CustomerCustom
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerSetDefaultAddressRequest(); // \GeminiCommerce\Customer\Model\CustomerSetDefaultAddressRequest
+$body = new \OpenAPI\Client\Model\CustomerSetDefaultAddressRequest(); // \OpenAPI\Client\Model\CustomerSetDefaultAddressRequest
 
 try {
     $result = $apiInstance->customerSetDefaultAddress2($body);
@@ -2860,15 +3172,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerSetDefaultAddressRequest**](../Model/CustomerSetDefaultAddressRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerSetDefaultAddressRequest**](../Model/CustomerSetDefaultAddressRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2894,13 +3206,19 @@ customerSetPermissions($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerSetPermissionsRequest(); // \GeminiCommerce\Customer\Model\CustomerSetPermissionsRequest
+$body = new \OpenAPI\Client\Model\CustomerSetPermissionsRequest(); // \OpenAPI\Client\Model\CustomerSetPermissionsRequest
 
 try {
     $result = $apiInstance->customerSetPermissions($body);
@@ -2914,7 +3232,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerSetPermissionsRequest**](../Model/CustomerSetPermissionsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerSetPermissionsRequest**](../Model/CustomerSetPermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -2922,7 +3240,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2948,13 +3266,19 @@ customerSetPermissions2($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerSetPermissionsRequest(); // \GeminiCommerce\Customer\Model\CustomerSetPermissionsRequest
+$body = new \OpenAPI\Client\Model\CustomerSetPermissionsRequest(); // \OpenAPI\Client\Model\CustomerSetPermissionsRequest
 
 try {
     $result = $apiInstance->customerSetPermissions2($body);
@@ -2968,7 +3292,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerSetPermissionsRequest**](../Model/CustomerSetPermissionsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerSetPermissionsRequest**](../Model/CustomerSetPermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -2976,7 +3300,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3002,13 +3326,19 @@ customerUnassignAgent($body): object
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUnassignAgentRequest(); // \GeminiCommerce\Customer\Model\CustomerUnassignAgentRequest
+$body = new \OpenAPI\Client\Model\CustomerUnassignAgentRequest(); // \OpenAPI\Client\Model\CustomerUnassignAgentRequest
 
 try {
     $result = $apiInstance->customerUnassignAgent($body);
@@ -3022,7 +3352,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUnassignAgentRequest**](../Model/CustomerUnassignAgentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUnassignAgentRequest**](../Model/CustomerUnassignAgentRequest.md)|  | |
 
 ### Return type
 
@@ -3030,7 +3360,7 @@ try {
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3044,7 +3374,7 @@ No authorization required
 ## `customerUnsubscribe()`
 
 ```php
-customerUnsubscribe($body): \GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse
+customerUnsubscribe($body): \OpenAPI\Client\Model\CustomerUnsubscribeResponse
 ```
 
 
@@ -3056,13 +3386,19 @@ customerUnsubscribe($body): \GeminiCommerce\Customer\Model\CustomerUnsubscribeRe
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest(); // \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest
+$body = new \OpenAPI\Client\Model\CustomerUnsubscribeRequest(); // \OpenAPI\Client\Model\CustomerUnsubscribeRequest
 
 try {
     $result = $apiInstance->customerUnsubscribe($body);
@@ -3076,15 +3412,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
+[**\OpenAPI\Client\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3098,7 +3434,7 @@ No authorization required
 ## `customerUnsubscribe2()`
 
 ```php
-customerUnsubscribe2($body): \GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse
+customerUnsubscribe2($body): \OpenAPI\Client\Model\CustomerUnsubscribeResponse
 ```
 
 
@@ -3110,13 +3446,19 @@ customerUnsubscribe2($body): \GeminiCommerce\Customer\Model\CustomerUnsubscribeR
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest(); // \GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest
+$body = new \OpenAPI\Client\Model\CustomerUnsubscribeRequest(); // \OpenAPI\Client\Model\CustomerUnsubscribeRequest
 
 try {
     $result = $apiInstance->customerUnsubscribe2($body);
@@ -3130,15 +3472,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUnsubscribeRequest**](../Model/CustomerUnsubscribeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
+[**\OpenAPI\Client\Model\CustomerUnsubscribeResponse**](../Model/CustomerUnsubscribeResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3152,7 +3494,7 @@ No authorization required
 ## `customerUpdate()`
 
 ```php
-customerUpdate($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerUpdate($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -3164,13 +3506,19 @@ customerUpdate($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUpdateRequest(); // \GeminiCommerce\Customer\Model\CustomerUpdateRequest
+$body = new \OpenAPI\Client\Model\CustomerUpdateRequest(); // \OpenAPI\Client\Model\CustomerUpdateRequest
 
 try {
     $result = $apiInstance->customerUpdate($body);
@@ -3184,15 +3532,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUpdateRequest**](../Model/CustomerUpdateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUpdateRequest**](../Model/CustomerUpdateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3206,7 +3554,7 @@ No authorization required
 ## `customerUpdate2()`
 
 ```php
-customerUpdate2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
+customerUpdate2($body): \OpenAPI\Client\Model\CustomerCustomerResponse
 ```
 
 
@@ -3218,13 +3566,19 @@ customerUpdate2($body): \GeminiCommerce\Customer\Model\CustomerCustomerResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUpdateRequest(); // \GeminiCommerce\Customer\Model\CustomerUpdateRequest
+$body = new \OpenAPI\Client\Model\CustomerUpdateRequest(); // \OpenAPI\Client\Model\CustomerUpdateRequest
 
 try {
     $result = $apiInstance->customerUpdate2($body);
@@ -3238,15 +3592,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUpdateRequest**](../Model/CustomerUpdateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUpdateRequest**](../Model/CustomerUpdateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
+[**\OpenAPI\Client\Model\CustomerCustomerResponse**](../Model/CustomerCustomerResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3260,7 +3614,7 @@ No authorization required
 ## `customerUpdateAddress()`
 
 ```php
-customerUpdateAddress($body): \GeminiCommerce\Customer\Model\CustomerAddressUpdateResponse
+customerUpdateAddress($body): \OpenAPI\Client\Model\CustomerAddressUpdateResponse
 ```
 
 
@@ -3272,13 +3626,19 @@ customerUpdateAddress($body): \GeminiCommerce\Customer\Model\CustomerAddressUpda
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddressUpdateRequest(); // \GeminiCommerce\Customer\Model\CustomerAddressUpdateRequest
+$body = new \OpenAPI\Client\Model\CustomerAddressUpdateRequest(); // \OpenAPI\Client\Model\CustomerAddressUpdateRequest
 
 try {
     $result = $apiInstance->customerUpdateAddress($body);
@@ -3292,15 +3652,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddressUpdateRequest**](../Model/CustomerAddressUpdateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddressUpdateRequest**](../Model/CustomerAddressUpdateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerAddressUpdateResponse**](../Model/CustomerAddressUpdateResponse.md)
+[**\OpenAPI\Client\Model\CustomerAddressUpdateResponse**](../Model/CustomerAddressUpdateResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3314,7 +3674,7 @@ No authorization required
 ## `customerUpdateAddress2()`
 
 ```php
-customerUpdateAddress2($body): \GeminiCommerce\Customer\Model\CustomerAddressUpdateResponse
+customerUpdateAddress2($body): \OpenAPI\Client\Model\CustomerAddressUpdateResponse
 ```
 
 
@@ -3326,13 +3686,19 @@ customerUpdateAddress2($body): \GeminiCommerce\Customer\Model\CustomerAddressUpd
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerAddressUpdateRequest(); // \GeminiCommerce\Customer\Model\CustomerAddressUpdateRequest
+$body = new \OpenAPI\Client\Model\CustomerAddressUpdateRequest(); // \OpenAPI\Client\Model\CustomerAddressUpdateRequest
 
 try {
     $result = $apiInstance->customerUpdateAddress2($body);
@@ -3346,15 +3712,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerAddressUpdateRequest**](../Model/CustomerAddressUpdateRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerAddressUpdateRequest**](../Model/CustomerAddressUpdateRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerAddressUpdateResponse**](../Model/CustomerAddressUpdateResponse.md)
+[**\OpenAPI\Client\Model\CustomerAddressUpdateResponse**](../Model/CustomerAddressUpdateResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3368,7 +3734,7 @@ No authorization required
 ## `customerUpdateGroup()`
 
 ```php
-customerUpdateGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerUpdateGroup($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -3380,13 +3746,19 @@ customerUpdateGroup($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUpdateGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerUpdateGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerUpdateGroupRequest(); // \OpenAPI\Client\Model\CustomerUpdateGroupRequest
 
 try {
     $result = $apiInstance->customerUpdateGroup($body);
@@ -3400,15 +3772,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUpdateGroupRequest**](../Model/CustomerUpdateGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUpdateGroupRequest**](../Model/CustomerUpdateGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3422,7 +3794,7 @@ No authorization required
 ## `customerUpdateGroup2()`
 
 ```php
-customerUpdateGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroupResponse
+customerUpdateGroup2($body): \OpenAPI\Client\Model\CustomerGroupResponse
 ```
 
 
@@ -3434,13 +3806,19 @@ customerUpdateGroup2($body): \GeminiCommerce\Customer\Model\CustomerGroupRespons
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUpdateGroupRequest(); // \GeminiCommerce\Customer\Model\CustomerUpdateGroupRequest
+$body = new \OpenAPI\Client\Model\CustomerUpdateGroupRequest(); // \OpenAPI\Client\Model\CustomerUpdateGroupRequest
 
 try {
     $result = $apiInstance->customerUpdateGroup2($body);
@@ -3454,15 +3832,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUpdateGroupRequest**](../Model/CustomerUpdateGroupRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUpdateGroupRequest**](../Model/CustomerUpdateGroupRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
+[**\OpenAPI\Client\Model\CustomerGroupResponse**](../Model/CustomerGroupResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3476,7 +3854,7 @@ No authorization required
 ## `customerUpdateSubscriber()`
 
 ```php
-customerUpdateSubscriber($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerUpdateSubscriber($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -3488,13 +3866,19 @@ customerUpdateSubscriber($body): \GeminiCommerce\Customer\Model\CustomerSubscrib
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUpdateSubscriberRequest(); // \GeminiCommerce\Customer\Model\CustomerUpdateSubscriberRequest
+$body = new \OpenAPI\Client\Model\CustomerUpdateSubscriberRequest(); // \OpenAPI\Client\Model\CustomerUpdateSubscriberRequest
 
 try {
     $result = $apiInstance->customerUpdateSubscriber($body);
@@ -3508,15 +3892,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUpdateSubscriberRequest**](../Model/CustomerUpdateSubscriberRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUpdateSubscriberRequest**](../Model/CustomerUpdateSubscriberRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3530,7 +3914,7 @@ No authorization required
 ## `customerUpdateSubscriber2()`
 
 ```php
-customerUpdateSubscriber2($body): \GeminiCommerce\Customer\Model\CustomerSubscriberResponse
+customerUpdateSubscriber2($body): \OpenAPI\Client\Model\CustomerSubscriberResponse
 ```
 
 
@@ -3542,13 +3926,19 @@ customerUpdateSubscriber2($body): \GeminiCommerce\Customer\Model\CustomerSubscri
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: Authorization
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new GeminiCommerce\Customer\Api\CustomerApi(
+
+$apiInstance = new OpenAPI\Client\Api\CustomerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$body = new \GeminiCommerce\Customer\Model\CustomerUpdateSubscriberRequest(); // \GeminiCommerce\Customer\Model\CustomerUpdateSubscriberRequest
+$body = new \OpenAPI\Client\Model\CustomerUpdateSubscriberRequest(); // \OpenAPI\Client\Model\CustomerUpdateSubscriberRequest
 
 try {
     $result = $apiInstance->customerUpdateSubscriber2($body);
@@ -3562,15 +3952,15 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Customer\Model\CustomerUpdateSubscriberRequest**](../Model/CustomerUpdateSubscriberRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CustomerUpdateSubscriberRequest**](../Model/CustomerUpdateSubscriberRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Customer\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
+[**\OpenAPI\Client\Model\CustomerSubscriberResponse**](../Model/CustomerSubscriberResponse.md)
 
 ### Authorization
 
-No authorization required
+[Authorization](../../README.md#Authorization)
 
 ### HTTP request headers
 
